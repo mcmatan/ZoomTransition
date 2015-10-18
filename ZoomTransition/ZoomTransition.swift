@@ -280,7 +280,7 @@ public class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControl
     }
     
     func handlePanGesture(gesture: UIPanGestureRecognizer){
-        var view = gesture.view!
+        let view = gesture.view!
         
         if interactive {
             if gesture.state == UIGestureRecognizerState.Changed {
